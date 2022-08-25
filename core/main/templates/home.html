@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for i in cars %}
+        <h3>{{ i.name }}</h3>
+        <img src="{{ i.img.url }}" width="300px" alt="">
+    {% endfor %}
+{% endblock %}
